@@ -1,0 +1,35 @@
+<div class="row">
+    <h1 class="centrado">Proyectos</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
+            Agregar Proyecto
+        </button>
+    </div>
+    <div>
+    <br>
+    </div>
+
+ <div class="card mb-3" style="max-width: 100%;" *ngFor="let Proyectos of proy">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img class="img-fluid" src={{Proyectos.fotoP}}>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{Proyectos.nombreP}}</h5>
+          <h5 class="card-title">{{Proyectos.periodoP}}</h5>
+          <p class="card-text">{{Proyectos.descripcionP}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="centrado4">
+      <td *ngIf="isLogged">
+      <button class="btn btn-light btn-xs" routerLink="/editproy/{{Proyectos.id}}">
+          <i class="bi bi-pencil-fill"></i></button>
+      </td>
+      <td *ngIf="isLogged">
+      <button class="btn btn-light btn-xs" (click)="delete(Proyectos.id)">
+          <i class="bi bi-trash-fill"></i></button>
+      </td>
+    </div>
+</div> 

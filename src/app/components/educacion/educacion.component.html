@@ -1,0 +1,36 @@
+<div class="row">
+    <h1 class="centrado">Educación</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
+    </div>
+    <div>
+    <br>
+    </div>
+
+<div class="card cuadro" style="width: 18rem;" *ngFor="let Educacion of educacion">
+    <img class="card-img-top imagen" src={{Educacion.fotoE}} alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title centrado2">{{Educacion.descripcionE}}</h3>
+      <p class="card-text centrado3">{{Educacion.nombreE}}</p>
+      <p class="card-text centrado3">{{Educacion.periodoE}}</p>
+
+    </div>
+    <div class="centrado4">
+        <td *ngIf="isLogged">
+        <button class="btn btn-light btn-xs" routerLink="/editedu/{{Educacion.id}}">
+            <i class="bi bi-pencil-fill"></i></button>
+        </td>
+        <td *ngIf="isLogged">
+        <button class="btn btn-light btn-xs" (click)="delete(Educacion.id)">
+            <i class="bi bi-trash-fill"></i></button>
+        </td>
+      </div>
+  </div>
+  <div>
+    <br>
+    </div>
+<div class="salto">
+    <br>
+</div>

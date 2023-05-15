@@ -1,0 +1,52 @@
+.row{
+    padding: 20px;
+}
+
+#parte1{
+    background-color: #a1b5cb;
+    text-align: center;
+}
+
+#nombre {
+font-size: 2em;
+font-weight: bold;
+margin-top: 1%;
+}
+
+/*Foto de perfil*/
+@media (min-width: 576px){
+    #fotoperfil {
+        position: absolute;
+        width: 15%;
+        left: 1%;
+        top: 475px;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        }
+}
+
+@media (max-width: 575px){
+    #fotoperfil {
+        position: absolute;
+        width: 30%;
+        left: 33%;
+        top: 450px;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        }
+}
+
+div{
+    background-color: #a1b5cb;
+}
+
+h2, h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.descrip{
+    font-style: oblique;
+}

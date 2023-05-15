@@ -1,0 +1,22 @@
+#logoAP{
+    width: 150px;
+}
+
+#redes{
+    margin-top: 15px;
+    float: right;
+    width: 50px;
+}
+
+.container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#ingreso{
+    margin-top: 22px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
