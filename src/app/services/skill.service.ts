@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'http://localhost:8080/skill/';
+  URL = 'https://backendap-7nzc.onrender.com/skill/';
   
   constructor(private httpClient: HttpClient) { }
 
