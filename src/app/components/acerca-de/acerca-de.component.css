@@ -50,3 +50,8 @@ h2, h3 {
 .descrip{
     font-style: oblique;
 }
+
+#edit{
+    float: right;
+    margin-right: 10px;
+}

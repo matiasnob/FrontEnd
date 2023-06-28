@@ -1,19 +1,25 @@
-<div class="container" *ngIf="proy">
+<div class="container" *ngIf="proy" style="background-color: #a1b5cb;">
     <div class="row">
         <div>
+            <legend class="text-center header">Editar Proyecto</legend>
+            <br>
+            <br>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="descripcionP">Descripcion del proyecto</label>
-                    <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="proy.descripcionP" required>
+                <textarea type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="proy.descripcionP" required></textarea>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="periodoP">Período</label>
                     <input type="text" class="form-control" id="periodoP" name="periodoP" [(ngModel)]="proy.periodoP" required>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="nombreP">Nombre de la institucion</label>
                     <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="proy.nombreP" required>
                 </div>
+                <br>
                 <div class="form-group">
                     <label for="fotoP">Link foto de la institución</label>
                     <input type="text" class="form-control" id="fotoP" name="fotoP" [(ngModel)]="proy.fotoP" required>
@@ -23,6 +29,7 @@
                     Editar proyecto
                 </button>
             </form>
+            <br>
         </div>
     </div>
 </div>
